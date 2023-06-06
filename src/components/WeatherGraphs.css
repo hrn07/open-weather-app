@@ -1,0 +1,12 @@
+.weather-list {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .weather-list li {
+    margin-right: 10px;
+  }
+
+  .weather-list li span{
+    margin-right: 10px;
+  }
