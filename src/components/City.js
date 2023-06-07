@@ -55,7 +55,7 @@ const City = () => {
           const { latitude, longitude } = position.coords;
           console.log("Latitude:", latitude);
           console.log("Longitude:", longitude);
-          axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=da6c13119bb9b9423f3026c2da8e9f7f`)
+          axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={your_api_key}`)
             .then(response => {
               const city = response.data.name;
               setSelectedOption({ value: city, label: city });
